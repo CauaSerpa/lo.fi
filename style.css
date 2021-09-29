@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+@font-face{
+	src: url('WorkSans-Bold.ttf');
+	font-family: "Bold";
+}
+
+@font-face{
+	src: url('WorkSans-Medium.ttf');
+	font-family: "Medium";
+}
+
+@font-face{
+	src: url('WorkSans-SemiBold.ttf');
+	font-family: "SemiBold";
+}
+
+.img1{
+	background-image: url('../image/image1.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	align-items: center;
+	text-align: center;
+	padding-top: 400px;
+	padding-bottom: 400px;
+}
+
+.img1 h1{
+	color: #fff;
+	font-size: 50px;
+	font-family: "Bold";
+}
+
+.img1 p{
+	margin-top: 20px;
+	margin-right: 450px;
+	margin-left: 450px;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Medium";
+}
+
+.texto1{
+	margin-right: 450px;
+	margin-left: 450px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	align-items: center;
+	text-align: center;
+	font-family: "Medium";
+}
+
+.img2{
+	background-image: url('../image/image2.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	align-items: center;
+	text-align: center;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+.img2 h1{
+	color: #fff;
+	font-size: 50px;
+	font-family: "Bold";
+}
+
+.img2 p{
+	margin-top: 20px;
+	margin-right: 450px;
+	margin-left: 450px;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Bold";
+}
+
+.texto2{
+	margin-right: 450px;
+	margin-left: 450px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	align-items: center;
+	text-align: center;
+	font-family: "Medium";
+}
+
+.img3{
+	background-image: url('../image/image1.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	align-items: center;
+	text-align: center;
+	padding-top: 400px;
+	padding-bottom: 400px;
+}
+
+.img3 h1{
+	color: #fff;
+	font-size: 50px;
+	font-family: "Bold";
+}
+
+.img3 p{
+	margin-top: 20px;
+	margin-right: 450px;
+	margin-left: 450px;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Bold";
+}
+
+.texto3{
+	margin-right: 450px;
+	margin-left: 450px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	align-items: center;
+	text-align: center;
+	font-family: "Medium";
+}
+
+.footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #000;
+	background-color: #d6d6d6;
+	font-family: "SemiBold";
+}
+
+.footer a{
+	text-decoration: none;
+	color: #8248e0;
+	cursor: pointer;
+}
