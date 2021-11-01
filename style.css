@@ -135,18 +135,6 @@ img
 	background-color: #fff;
 	box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
-.contact__imput
-{
-	width: 100%;
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-semi);
-	font-family: var(--body-font);
-	padding: 1rem;
-	border-radius: .5rem;
-	border: 3px solid var(--third-color);
-	outline: none;
-	margin-bottom: var(--mb-4);
-}
 .blur#blur.active-popup
 {
 	filter: blur(20px);
