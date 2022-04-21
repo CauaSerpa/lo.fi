@@ -150,7 +150,7 @@ header .nav
         top: 0;
         right: -60%;
         width: 60%;
-        height: 100vh;
+        height: calc(100vh - 3rem);
         padding: 3rem 2rem;
         background: var(--second-black);
         transition: .5s;
