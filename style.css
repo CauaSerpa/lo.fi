@@ -1,0 +1,258 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Variables CSS */
+:root
+{
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+/* Colors */
+:root
+{
+	--black: #181818;
+    --second-black: #000;
+	--white: #FFFFFF;
+    --golden: #B38D46;
+    --second-golden: #93743B;
+}
+/* Fonte */
+:root
+{
+	--body-font: 'Poppins', sans-serif;
+	--big-font-size: 1.5rem;
+	--h2-font-size: 1.5rem;
+	--normal-font-size: 0.938rem;
+	--little-font-size: 0.819rem;
+}
+@media screen and (min-width: 768px)
+{
+	:root
+	{
+		--big-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--normal-font-size: 1rem;
+	    --little-font-size: 0.938rem;
+	}
+}
+/* Margens */
+:root
+{
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+/* z index */
+:root{
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+}
+/* Base */
+*,::before,::after
+{
+	box-sizing: border-box;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	margin: var(--header-heigth) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+    color: var(--white);
+	background: var(--white);
+    
+    transform: translateX(-60%);
+}
+h1,h2,p
+{
+	margin: 0;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+    color: var(--white);
+}
+img
+{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+/* Class CSS */
+.l-main
+{
+    padding: 2rem;
+}
+.section
+{
+    width: 100%;
+    margin-top: 6rem;
+}
+.logo
+{
+    width: 50px;
+}
+.line
+{
+    width: 100px;
+    height: 1px;
+    background: var(--golden);
+}
+.title
+{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-2);
+    font-weight: 600;
+}
+.text
+{
+    letter-spacing: 3px;
+    font-size: var(--normal-font-size);
+}
+/* Nav */
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--second-black);
+    display: flex;
+    justify-content: center;
+    z-index: var(--z-fixed);
+}
+header .nav
+{
+    width: 90%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px)
+{
+    header .nav .nav__container
+    {
+        position: fixed;
+        top: 0;
+        right: -60%;
+        width: 60%;
+        height: 100vh;
+        padding: 3rem 2rem;
+        background: var(--second-black);
+        transition: .5s;
+    }
+}
+.nav__button
+{
+    display: flex;
+    padding: .1rem .6rem;
+    color: var(--white);
+    background: transparent;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: color .5s cubic-bezier(.19,1,.22,1);
+}
+.nav__button .button__text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__button .button__text img
+{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.nav__logo
+{
+    position: relative;
+}
+.mobile-menu
+{
+    cursor: pointer;
+}
+.mobile-menu div
+{
+    width: 20px;
+    height: 1px;
+    background: var(--white);
+}
+.mobile-menu div.line-1
+{
+    margin-bottom: 6px;
+    transition: .1s;
+}
+.mobile-menu div.line-3
+{
+    margin-top: 6px;
+    transition: .1s;
+}
+.nav__item
+{
+    display: flex;
+    justify-content: end;
+    margin-bottom: var(--mb-4);
+}
+.link
+{
+    position: relative;
+    right: 0;
+    color: var(--white);
+    transition: .3s;
+}
+.link:hover
+{
+    position: relative;
+    padding-right: 1rem;
+}
+.link:hover::after
+{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    right: 0;
+    top: 0;
+    background: var(--golden);
+}
+.nav__button
+{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+}
+/* Active menu */
+.active
+{
+    padding-right: 1rem;
+}
+.active::after
+{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    right: 0;
+    top: 0;
+    background: var(--golden);
+}
+/* Show menu */
+.show
+{
+}
