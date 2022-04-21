@@ -194,12 +194,12 @@ header .nav
 }
 .mobile-menu div.line-1
 {
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     transition: .1s;
 }
 .mobile-menu div.line-3
 {
-    margin-top: 6px;
+    margin-top: 0px;
     transition: .1s;
 }
 .nav__item
